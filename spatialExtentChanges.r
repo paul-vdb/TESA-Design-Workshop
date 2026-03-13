@@ -98,5 +98,6 @@ poly_sf %>% ggplot() +
   geom_sf() + 
   theme_bw() + 
   geom_sf(data = smp_full$sample) + 
+  geom_sf(data = smp_sub$sample, col = 'blue', shape = 17, size = 2) + 
   geom_sf(data = poly_sf_sub, fill = "blue", alpha = 0.1) +
-  geom_sf(data = samples_dropped, shape = 3, col = 'red', cex = 2) 
+  geom_sf(data = samples_dropped, shape = 3, col = 'red', size = 2) 
